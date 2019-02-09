@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/Main.cpp \
+../src/MineFinder.cpp 
+
+OBJS += \
+./src/Main.o \
+./src/MineFinder.o 
+
+CPP_DEPS += \
+./src/Main.d \
+./src/MineFinder.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/%.o: ../src/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -I"/home/user/Desktop/NetworkingLab/SDKClient/src" -I"/home/user/Desktop/NetworkingLab/Utils/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
